@@ -151,7 +151,7 @@ import VuePerfectScrollbar from "vue-perfect-scrollbar";
 import VNavMenuGroup from "./VerticalNavMenuGroup.vue";
 import VNavMenuItem from "./VerticalNavMenuItem.vue";
 
-import Logo from "../Logo.vue";
+import Logo from "../../Logo.vue";
 
 export default {
   name: "v-nav-menu",

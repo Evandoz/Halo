@@ -81,7 +81,6 @@
 </template>
 
 <script>
-// import VNavMenuItem from './VerticalNavMenuItem.vue'
 import HNavMenuItem from "./HorizontalNavMenuItem.vue";
 
 export default {
