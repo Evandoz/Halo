@@ -19,7 +19,7 @@
   >
     <v-nav-menu
       :navMenuItems="navMenuItems"
-      title="Vuexy"
+      title="Matrix"
       parent=".layout--main"
     />
 
@@ -173,7 +173,8 @@
 <script>
 import BackToTop from "vue-backtotop";
 import HNavMenu from "@/layouts/components/horizontal-nav-menu/HorizontalNavMenu.vue";
-import navMenuItems from "@/layouts/components/vx-tooltip/vertical-nav-menu/navMenuItems.js";
+import TheCustomizer from "@/layouts/components/customizer/TheCustomizer.vue";
+// import navMenuItems from "@/layouts/components/vx-tooltip/vertical-nav-menu/navMenuItems.js";
 import TheNavbarHorizontal from "@/layouts/components/navbar/TheNavbarHorizontal.vue";
 import TheNavbarVertical from "@/layouts/components/navbar/TheNavbarVertical.vue";
 import TheFooter from "@/layouts/components/TheFooter.vue";
@@ -187,7 +188,8 @@ export default {
     TheFooter,
     TheNavbarHorizontal,
     TheNavbarVertical,
-    VNavMenu
+    VNavMenu,
+    TheCustomizer
   },
   data() {
     return {
@@ -196,7 +198,409 @@ export default {
       isNavbarDark: false,
       navbarColor: themeConfig.navbarColor || "#fff",
       navbarType: themeConfig.navbarType || "floating",
-      navMenuItems: navMenuItems,
+      navMenuItems: [
+        {
+          url: "/overview",
+          name: "概览",
+          slug: "overview",
+          icon: "ActivityIcon"
+        },
+        {
+          header: "集群管理",
+          icon: "LayersIcon",
+          i18n: "UI",
+          items: [
+            {
+              url: null,
+              tag: "4",
+              icon: "LayersIcon",
+              tagColor: "primary",
+              name: "Matrix 集群",
+              slug: "data-list-list-view",
+              i18n: "ListView",
+              submenu: [
+                {
+                  url: null,
+                  name: "集群监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+
+                {
+                  url: null,
+                  name: "活跃集群",
+                  tag: "3",
+                  tagColor: "success",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "异常集群",
+                  tag: "1",
+                  tagColor: "danger",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "集群部署",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                }
+              ]
+            },
+            {
+              url: null,
+              name: "主机管理",
+              tag: "172",
+              tagColor: "success",
+              icon: "ServerIcon",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "主机监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  tag: "12",
+                  tagColor: "primary",
+                  name: "配置主机",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "正常主机",
+                  tag: "172",
+                  tagColor: "success",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                },
+                {
+                  url: null,
+                  name: "异常主机",
+                  tag: "3",
+                  tagColor: "danger",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                },
+                {
+                  url: null,
+                  name: "远程管理",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                }
+              ]
+            },
+            {
+              url: null,
+              name: "Redis 管理",
+              tag: "3",
+              tagColor: "success",
+              icon: "CpuIcon",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "集群监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "活跃集群",
+                  tag: "3",
+                  tagColor: "success",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "异常集群",
+                  tag: "1",
+                  tagColor: "danger",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "集群部署",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          header: "业务管理",
+          icon: "LayersIcon",
+          i18n: "UI",
+          items: [
+            {
+              url: null,
+              name: "项目管理",
+              tag: "8",
+              tagColor: "success",
+              icon: "FolderIcon",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "项目监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "正常项目",
+                  tag: "4",
+                  tagColor: "success",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "项目部署",
+                  tag: "2",
+                  tagColor: "primary",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "归档项目",
+                  tag: "8",
+                  tagColor: "success",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                }
+              ]
+            },
+            {
+              url: null,
+              name: "执行器",
+              tag: "55",
+              tagColor: "success",
+              icon: "ZapIcon",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "执行器监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "活跃执行器实例",
+                  tag: "55",
+                  tagColor: "success",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "异常执行器实例",
+                  tag: "9",
+                  tagColor: "danger",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "执行器类型",
+                  tag: "32",
+                  tagColor: "primary",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "动态部署服务",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          header: "运行管理",
+          i18n: "UI",
+          items: [
+            {
+              url: null,
+              name: "数据流",
+              tag: "8",
+              tagColor: "success",
+              icon: "GitBranchIcon",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "数据流监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "数据流管理",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "正常数据流",
+                  tag: "8",
+                  tagColor: "success",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                },
+                {
+                  url: null,
+                  name: "异常数据流",
+                  tag: "2",
+                  tagColor: "warning",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                }
+              ]
+            },
+            {
+              url: null,
+              name: "负载任务",
+              tag: "292",
+              tagColor: "primary",
+              icon: "MenuIcon",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "任务监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "主动任务",
+                  tag: "69",
+                  tagColor: "primary",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "被动任务",
+                  tag: "223",
+                  tagColor: "primary",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                },
+                {
+                  url: null,
+                  name: "已完成任务",
+                  tag: "1132",
+                  tagColor: "success",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                },
+                {
+                  url: null,
+                  name: "异常任务",
+                  tag: "11",
+                  tagColor: "danger",
+                  slug: "data-list-thumb-view",
+                  i18n: "ThumbView"
+                }
+              ]
+            },
+            {
+              url: null,
+              name: "消息队列",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "消息监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "集群状态",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                }
+              ]
+            },
+            {
+              url: null,
+              name: "数据输出",
+              icon: "HardDriveIcon",
+              i18n: "DataList",
+              submenu: [
+                {
+                  url: null,
+                  name: "对象存储监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView"
+                },
+                {
+                  url: null,
+                  name: "数据库监控",
+                  slug: "data-list-list-view",
+                  i18n: "ListView",
+                  submenu: [
+                    {
+                      url: null,
+                      name: "Mongo DB",
+                      slug: "data-list-list-view",
+                      i18n: "ListView"
+                    },
+                    {
+                      url: null,
+                      name: "HDFS",
+                      slug: "data-list-list-view",
+                      i18n: "ListView"
+                    },
+                    {
+                      url: null,
+                      name: "Hive",
+                      slug: "data-list-list-view",
+                      i18n: "ListView"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          header: "资源",
+          i18n: "UI",
+          items: [
+            {
+              url: null,
+              name: "数据分析平台",
+              icon: "PieChartIcon",
+              i18n: "DataList"
+            },
+            {
+              url: null,
+              name: "Docker 私有仓库",
+              icon: "PieChartIcon",
+              i18n: "DataList"
+            }
+          ]
+        }
+      ],
       routerTransition: themeConfig.routerTransition || "none",
       routeTitle: this.$route.meta.pageTitle
     };

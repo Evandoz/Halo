@@ -11,8 +11,8 @@
       class="notification-dropdown dropdown-custom vx-navbar-dropdown"
     >
       <div class="notification-top text-center p-5 bg-primary text-white">
-        <h3 class="text-white">{{ unreadNotifications.length }} New</h3>
-        <p class="opacity-75">App Notifications</p>
+        <h3 class="text-white">{{ unreadNotifications.length }} 条新消息</h3>
+        <p class="opacity-75">系统消息提醒</p>
       </div>
 
       <VuePerfectScrollbar
@@ -70,7 +70,7 @@
         d-theme-border-grey-light
         cursor-pointer"
       >
-        <span>View All Notifications</span>
+        <span>查看全部消息</span>
       </div>
     </vs-dropdown-menu>
   </vs-dropdown>

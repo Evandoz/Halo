@@ -33,8 +33,8 @@
           class="customizer-header mt-6 flex items-center justify-between px-6"
         >
           <div>
-            <h4>THEME CUSTOMIZER</h4>
-            <small>Customize & Preview in Real Time</small>
+            <h4>自定义显示</h4>
+            <small>实时编辑 & 预览</small>
           </div>
           <feather-icon
             icon="XIcon"
@@ -53,21 +53,21 @@
           <div class="px-6">
             <!-- Layout Type -->
             <div class="mt-4">
-              <h5 class="mb-2">Layout Type</h5>
+              <h5 class="mb-2">页面布局</h5>
               <div>
                 <vs-radio
                   v-model="layoutType"
                   vs-value="vertical"
                   class="mr-4"
                   vs-name="layout-type-vertical"
-                  >Vertical</vs-radio
+                  >垂直</vs-radio
                 >
                 <vs-radio
                   v-model="layoutType"
                   vs-value="horizontal"
                   class="mr-4"
                   vs-name="layout-type-horizontal"
-                  >Horizontal</vs-radio
+                  >水平</vs-radio
                 >
               </div>
             </div>
@@ -76,7 +76,7 @@
 
             <!-- THEME COLORS -->
             <div>
-              <h5 class="mb-4">Theme Color</h5>
+              <h5 class="mb-4">主题颜色</h5>
               <ul class="clearfix">
                 <!-- Color Square -->
                 <li
@@ -112,7 +112,7 @@
 
             <!-- THEME -->
             <div class="mt-4">
-              <h5 class="mb-2">Theme Mode</h5>
+              <h5 class="mb-2">主题类型</h5>
               <div>
                 <vs-radio
                   v-model="themeMode"
@@ -143,7 +143,7 @@
             <template v-if="layoutType === 'vertical'">
               <!-- COLLAPSE SIDEBAR -->
               <div class="mt-4 flex justify-between">
-                <h5>Collapse Sidebar</h5>
+                <h5>侧栏紧缩</h5>
                 <vs-switch v-model="reduced_sidebar" />
               </div>
 
@@ -154,7 +154,7 @@
 
             <template v-if="layoutType === 'vertical'">
               <div class="mt-4">
-                <h5>Navbar Color</h5>
+                <h5>顶栏颜色</h5>
                 <ul class="clearfix">
                   <!-- WHITE COLOR -->
                   <li
@@ -199,8 +199,8 @@
             <!-- NAVBAR TYPE -->
             <div class="mt-4">
               <h5 class="mb-2">
-                {{ (layoutType === 'vertical' || windowWidth &lt; 1200) ? "Navbar" : "Nav Menu" }}
-                Type
+                {{ (layoutType === 'vertical' || windowWidth &lt; 1200) ? "顶栏" : "顶栏菜单" }}
+                类型
               </h5>
               <div>
                 <vs-radio
@@ -276,7 +276,7 @@
 
             <!-- SHOW SCROLL TO TOP -->
             <div class="mt-4 flex justify-between">
-              <h5 class="mb-2">Hide Scroll To Top</h5>
+              <h5 class="mb-2">禁用 回到顶部</h5>
               <vs-switch v-model="hideScrollToTopLocal" />
             </div>
 
@@ -284,7 +284,7 @@
 
             <!-- ROUTER ANIMATION -->
             <div class="mt-4">
-              <h5 class="mb-2">Router Animation {{ routerTransitionLocal }}</h5>
+              <h5 class="mb-2">路由切换动画 {{ routerTransitionLocal }}</h5>
               <vs-select v-model="routerTransitionLocal">
                 <vs-select-item
                   v-for="(item, index) in routerTransitionsList"
@@ -329,7 +329,7 @@ export default {
         maxScrollbarLength: 60,
         wheelSpeed: 0.6
       },
-      themeColors: ["#7367F0", "#28C76F", "#EA5455", "#FF9F43", "#1E1E1E"]
+      themeColors: ["#428dfc", "#28C76F", "#EA5455", "#FF9F43", "#1E1E1E"]
     };
   },
   watch: {

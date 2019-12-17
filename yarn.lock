@@ -1536,15 +1536,15 @@ aes-decrypter@3.0.0:
     global "^4.3.2"
     pkcs7 "^1.0.2"
 
-ag-grid-community@^21.0.1:
-  version "21.2.2"
-  resolved "https://registry.npm.taobao.org/ag-grid-community/download/ag-grid-community-21.2.2.tgz#a5696a303fa04d03d26e4c9e09e114d308ff4ad4"
-  integrity sha1-pWlqMD+gTQPSbkyeCeEU0wj/StQ=
+ag-grid-community@^22.1.1:
+  version "22.1.1"
+  resolved "https://registry.npm.taobao.org/ag-grid-community/download/ag-grid-community-22.1.1.tgz?cache=0&sync_timestamp=1576486397235&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fag-grid-community%2Fdownload%2Fag-grid-community-22.1.1.tgz#279d0b4a3ab199dc647714add0d2d393a75315cb"
+  integrity sha1-J50LSjqxmdxkdxSt0NLTk6dTFcs=
 
-ag-grid-vue@^21.0.1:
-  version "21.2.2"
-  resolved "https://registry.npm.taobao.org/ag-grid-vue/download/ag-grid-vue-21.2.2.tgz#87f1c4dac10949fdb184d1456aea993a42fc5c68"
-  integrity sha1-h/HE2sEJSf2xhNFFauqZOkL8XGg=
+ag-grid-vue@^22.1.1:
+  version "22.1.1"
+  resolved "https://registry.npm.taobao.org/ag-grid-vue/download/ag-grid-vue-22.1.1.tgz#0178458d9a27f3a0e8dc4ce1b85b16147a67b3e7"
+  integrity sha1-AXhFjZon86Do3EzhuFsWFHpns+c=
 
 agentkeepalive@^2.2.0:
   version "2.2.0"
@@ -1694,10 +1694,10 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-apexcharts@^3.6.12:
-  version "3.10.1"
-  resolved "https://registry.npm.taobao.org/apexcharts/download/apexcharts-3.10.1.tgz#ac85b08796f0fef656ecc0458cf0362f75f63bad"
-  integrity sha1-rIWwh5bw/vZW7MBFjPA2L3X2O60=
+apexcharts@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.npm.taobao.org/apexcharts/download/apexcharts-3.11.0.tgz#9f3819287ff63a6f6353bfd3c8ccb93756844e59"
+  integrity sha1-nzgZKH/2Om9jU7/TyMy5N1aETlk=
   dependencies:
     promise-polyfill "8.1.0"
     svg.draggable.js "^2.2.2"
@@ -1853,13 +1853,13 @@ atob@^2.1.1:
   resolved "https://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
-auth0-js@^9.10.4:
-  version "9.11.3"
-  resolved "https://registry.npm.taobao.org/auth0-js/download/auth0-js-9.11.3.tgz#a19add9f5c47d155b7a6f87a6dd2b197a9a43860"
-  integrity sha1-oZrdn1xH0VW3pvh6bdKxl6mkOGA=
+auth0-js@^9.12.0:
+  version "9.12.0"
+  resolved "https://registry.npm.taobao.org/auth0-js/download/auth0-js-9.12.0.tgz#6b8ac52767382366b1f81d85e394329174c54dc3"
+  integrity sha1-a4rFJ2c4I2ax+B2F45QykXTFTcM=
   dependencies:
     base64-js "^1.3.0"
-    idtoken-verifier "^1.4.1"
+    idtoken-verifier "^2.0.0"
     js-cookie "^2.2.0"
     qs "^6.7.0"
     superagent "^3.8.3"
@@ -2935,7 +2935,7 @@ core-js@3.2.1:
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-3.2.1.tgz?cache=0&sync_timestamp=1575310298917&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-3.2.1.tgz#cd41f38534da6cc59f7db050fe67307de9868b09"
   integrity sha1-zUHzhTTabMWffbBQ/mcwfemGiwk=
 
-"core-js@>=2.6.5 <3.0.0", core-js@^2.4.0, core-js@^2.6.5:
+core-js@^2.4.0, core-js@^2.6.5:
   version "2.6.10"
   resolved "https://registry.npm.taobao.org/core-js/download/core-js-2.6.10.tgz?cache=0&sync_timestamp=1575310298917&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcore-js%2Fdownload%2Fcore-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
   integrity sha1-iluDkfjMcBPacDQRzltYVwYwDX8=
@@ -3826,10 +3826,10 @@ eslint-loader@^2.1.2:
     object-hash "^1.1.4"
     rimraf "^2.6.1"
 
-eslint-plugin-prettier@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.npm.taobao.org/eslint-plugin-prettier/download/eslint-plugin-prettier-3.1.1.tgz#507b8562410d02a03f0ddc949c616f877852f2ba"
-  integrity sha1-UHuFYkENAqA/DdyUnGFvh3hS8ro=
+eslint-plugin-prettier@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-prettier/download/eslint-plugin-prettier-3.1.2.tgz#432e5a667666ab84ce72f945c72f77d996a5c9ba"
+  integrity sha1-Qy5aZnZmq4TOcvlFxy932Zalybo=
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
@@ -4241,10 +4241,10 @@ file-loader@^3.0.1:
     loader-utils "^1.0.2"
     schema-utils "^1.0.0"
 
-file-saver@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.npm.taobao.org/file-saver/download/file-saver-2.0.1.tgz#7fe2242af1cbc559a29d8176078a8b56d781fa79"
-  integrity sha1-f+IkKvHLxVminYF2B4qLVteB+nk=
+file-saver@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npm.taobao.org/file-saver/download/file-saver-2.0.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffile-saver%2Fdownload%2Ffile-saver-2.0.2.tgz#06d6e728a9ea2df2cce2f8d9e84dfcdc338ec17a"
+  integrity sha1-BtbnKKnqLfLM4vjZ6E383DOOwXo=
 
 filesize@^3.6.1:
   version "3.6.1"
@@ -5131,10 +5131,10 @@ idb@3.0.2:
   resolved "https://registry.npm.taobao.org/idb/download/idb-3.0.2.tgz#c8e9122d5ddd40f13b60ae665e4862f8b13fa384"
   integrity sha1-yOkSLV3dQPE7YK5mXkhi+LE/o4Q=
 
-idtoken-verifier@^1.4.1:
-  version "1.5.1"
-  resolved "https://registry.npm.taobao.org/idtoken-verifier/download/idtoken-verifier-1.5.1.tgz#86e0058f78ca67384d305842bebdea576e2d56eb"
-  integrity sha1-huAFj3jKZzhNMFhCvr3qV24tVus=
+idtoken-verifier@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/idtoken-verifier/download/idtoken-verifier-2.0.0.tgz#3c4334b16ddce111eba9a2d5632ee3f7684525b7"
+  integrity sha1-PEM0sW3c4RHrqaLVYy7j92hFJbc=
   dependencies:
     base64-js "^1.3.0"
     crypto-js "^3.1.9-1"
@@ -6004,7 +6004,7 @@ loader-utils@^0.2.16:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
-loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
+loader-utils@^1.0.2, loader-utils@^1.1.0, loader-utils@^1.2.3:
   version "1.2.3"
   resolved "https://registry.npm.taobao.org/loader-utils/download/loader-utils-1.2.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Floader-utils%2Fdownload%2Floader-utils-1.2.3.tgz#1ff5dc6911c9f0a062531a4c04b609406108c2c7"
   integrity sha1-H/XcaRHJ8KBiUxpMBLYJQGEIwsc=
@@ -8131,10 +8131,20 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.npm.taobao.org/punycode/download/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
 
-purgecss@^1.3.0, purgecss@^1.4.0:
+purgecss@^1.4.0:
   version "1.4.1"
   resolved "https://registry.npm.taobao.org/purgecss/download/purgecss-1.4.1.tgz#d362e63eb1ed9dd1fa1554b9fd7accb8d54e56dc"
   integrity sha1-02LmPrHtndH6FVS5/XrMuNVOVtw=
+  dependencies:
+    glob "^7.1.3"
+    postcss "^7.0.14"
+    postcss-selector-parser "^6.0.0"
+    yargs "^14.0.0"
+
+purgecss@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.npm.taobao.org/purgecss/download/purgecss-1.4.2.tgz#67ab50cb4f5c163fcefde56002467c974e577f41"
+  integrity sha1-Z6tQy09cFj/O/eVgAkZ8l05Xf0E=
   dependencies:
     glob "^7.1.3"
     postcss "^7.0.14"
@@ -8754,15 +8764,15 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-loader@^7.1.0:
-  version "7.3.1"
-  resolved "https://registry.npm.taobao.org/sass-loader/download/sass-loader-7.3.1.tgz#a5bf68a04bcea1c13ff842d747150f7ab7d0d23f"
-  integrity sha1-pb9ooEvOocE/+ELXRxUPerfQ0j8=
+sass-loader@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.npm.taobao.org/sass-loader/download/sass-loader-8.0.0.tgz#e7b07a3e357f965e6b03dd45b016b0a9746af797"
+  integrity sha1-57B6PjV/ll5rA91FsBawqXRq95c=
   dependencies:
     clone-deep "^4.0.1"
-    loader-utils "^1.0.1"
-    neo-async "^2.5.0"
-    pify "^4.0.1"
+    loader-utils "^1.2.3"
+    neo-async "^2.6.1"
+    schema-utils "^2.1.0"
     semver "^6.3.0"
 
 sax@^1.2.4, sax@~1.2.4:
@@ -8778,6 +8788,14 @@ schema-utils@^1.0.0:
     ajv "^6.1.0"
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
+
+schema-utils@^2.1.0:
+  version "2.6.1"
+  resolved "https://registry.npm.taobao.org/schema-utils/download/schema-utils-2.6.1.tgz#eb78f0b945c7bcfa2082b3565e8db3548011dc4f"
+  integrity sha1-63jwuUXHvPoggrNWXo2zVIAR3E8=
+  dependencies:
+    ajv "^6.10.2"
+    ajv-keywords "^3.4.1"
 
 script-loader@0.7.2:
   version "0.7.2"
@@ -10056,10 +10074,10 @@ vary@~1.1.2:
   resolved "https://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vee-validate@^2.2.8:
-  version "2.2.15"
-  resolved "https://registry.npm.taobao.org/vee-validate/download/vee-validate-2.2.15.tgz#dc6c925d21e57288d3308fe5a39a0941036c575a"
-  integrity sha1-3GySXSHlcojTMI/lo5oJQQNsV1o=
+vee-validate@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npm.taobao.org/vee-validate/download/vee-validate-3.2.0.tgz#0e8b2a4307339b05df01db4d2c91ab6ed8a3b90d"
+  integrity sha1-DosqQwczmwXfAdtNLJGrbtijuQ0=
 
 vendors@^1.0.0:
   version "1.0.3"
@@ -10233,12 +10251,11 @@ vue-clipboard2@^0.3.0:
   dependencies:
     clipboard "^2.0.0"
 
-vue-context@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.taobao.org/vue-context/download/vue-context-4.0.0.tgz#634805a25b52a30c80d342f301116a6ecd0632af"
-  integrity sha1-Y0gFoltSowyA00LzARFqbs0GMq8=
+vue-context@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npm.taobao.org/vue-context/download/vue-context-5.0.0.tgz#7f9a90bb00a45eba6aad1d49fdf9e0a946bf503f"
+  integrity sha1-f5qQuwCkXrpqrR1J/fngqUa/UD8=
   dependencies:
-    core-js ">=2.6.5 <3.0.0"
     vue-clickaway "^2.2.2"
 
 vue-e-bus@^1.0.0:
@@ -10325,10 +10342,10 @@ vue-loader@^15.7.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-perfect-scrollbar@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npm.taobao.org/vue-perfect-scrollbar/download/vue-perfect-scrollbar-0.1.0.tgz#be12c23d1753a013fa81ceb9872cb5fc0b1b4960"
-  integrity sha1-vhLCPRdToBP6gc65hyy1/AsbSWA=
+vue-perfect-scrollbar@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.npm.taobao.org/vue-perfect-scrollbar/download/vue-perfect-scrollbar-0.2.1.tgz#2fecab975512f7c8c37e1610dee48faf46d649f3"
+  integrity sha1-L+yrl1US98jDfhYQ3uSPr0bWSfM=
 
 vue-prism-component@^1.1.1:
   version "1.1.1"
@@ -10386,10 +10403,10 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-template-compiler@^2.6.10:
-  version "2.6.10"
-  resolved "https://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.6.10.tgz#323b4f3495f04faa3503337a82f5d6507799c9cc"
-  integrity sha1-MjtPNJXwT6o1AzN6gvXWUHeZycw=
+vue-template-compiler@^2.6.11:
+  version "2.6.11"
+  resolved "https://registry.npm.taobao.org/vue-template-compiler/download/vue-template-compiler-2.6.11.tgz?cache=0&sync_timestamp=1576267389403&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-template-compiler%2Fdownload%2Fvue-template-compiler-2.6.11.tgz#c04704ef8f498b153130018993e56309d4698080"
+  integrity sha1-wEcE749JixUxMAGJk+VjCdRpgIA=
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
@@ -10452,6 +10469,11 @@ vue@^2.1.8, vue@^2.4.4, vue@^2.5.16, vue@^2.5.17, vue@^2.6.10, vue@^2.6.9:
   version "2.6.10"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha1-pysaQqTYKnIepDjRtr9V5mGVxjc=
+
+vue@^2.6.11:
+  version "2.6.11"
+  resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz?cache=0&sync_timestamp=1576267395423&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
+  integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=
 
 vuedraggable@^2.21.0:
   version "2.23.2"

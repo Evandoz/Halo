@@ -36,7 +36,7 @@
           >
             <logo class="w-10 mr-4 fill-current text-primary" />
             <span
-              class="vx-logo-text text-primary"
+              class="font-sans vx-logo-text text-primary "
               v-show="isMouseEnter || !reduce"
               v-if="title"
               >{{ title }}</span

@@ -12,7 +12,7 @@ import Vuesax from "vuesax";
 
 // MAIN COLORS - VUESAX THEME COLORS
 let colors = {
-  primary: "#000000",
+  primary: "#7367F0",
   success: "#28C76F",
   danger: "#EA5455",
   warning: "#FF9F43",

@@ -35,9 +35,14 @@ const router = new Router({
           component: () => import("./views/Home.vue")
         },
         {
-          path: "/page2",
-          name: "page-2",
-          component: () => import("./views/Page2.vue")
+          path: "/overview",
+          name: "overview",
+          component: () => import("./views/Overview.vue")
+        },
+        {
+          path: "/dashboard/:region",
+          name: "dashboard",
+          component: () => import("./views/Dashboard.vue")
         }
       ]
     },
