@@ -211,7 +211,6 @@ export default {
       // products: [],
       itemsPerPage: 6,
       isMounted: false,
-
       // Data Sidebar
       addNewDataSidebar: false,
       sidebarData: {}
