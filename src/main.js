@@ -20,6 +20,12 @@ Vue.use(Vuesax);
 import axios from "./axios.js";
 Vue.prototype.$http = axios;
 
+// API Calls
+import "./http/requests";
+
+// mock
+import "./fake-db/index.js";
+
 // Theme Configurations
 import "../themeConfig.js";
 
@@ -37,6 +43,17 @@ import router from "./router";
 
 // Vuex Store
 import store from "./store/store";
+
+// Clipboard
+import VueClipboard from "vue-clipboard2";
+Vue.use(VueClipboard);
+
+// VeeValidate
+import VeeValidate from "vee-validate";
+Vue.use(VeeValidate);
+
+// Vuexy Admin Filters
+import "./filters/filters";
 
 // Vuejs - Vue wrapper for hammerjs
 import { VueHammer } from "vue2-hammer";

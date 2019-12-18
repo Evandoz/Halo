@@ -43,6 +43,11 @@ const router = new Router({
           path: "/dashboard/:region",
           name: "dashboard",
           component: () => import("./views/Dashboard.vue")
+        },
+        {
+          path: "/servers",
+          name: "servers",
+          component: () => import("./views/DataListListView.vue")
         }
       ]
     },

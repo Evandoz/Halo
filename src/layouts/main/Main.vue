@@ -273,7 +273,7 @@ export default {
                   i18n: "ListView"
                 },
                 {
-                  url: null,
+                  url: "/servers",
                   name: "正常主机",
                   tag: "172",
                   tagColor: "success",
@@ -524,6 +524,9 @@ export default {
             {
               url: null,
               name: "消息队列",
+              icon: "BoxIcon",
+              tag: "9012 I/O",
+              tagColor: "primary",
               i18n: "DataList",
               submenu: [
                 {

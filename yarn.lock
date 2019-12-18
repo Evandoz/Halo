@@ -10074,10 +10074,10 @@ vary@~1.1.2:
   resolved "https://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
-vee-validate@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npm.taobao.org/vee-validate/download/vee-validate-3.2.0.tgz#0e8b2a4307339b05df01db4d2c91ab6ed8a3b90d"
-  integrity sha1-DosqQwczmwXfAdtNLJGrbtijuQ0=
+vee-validate@2.2.15:
+  version "2.2.15"
+  resolved "https://registry.npm.taobao.org/vee-validate/download/vee-validate-2.2.15.tgz#dc6c925d21e57288d3308fe5a39a0941036c575a"
+  integrity sha1-3GySXSHlcojTMI/lo5oJQQNsV1o=
 
 vendors@^1.0.0:
   version "1.0.3"
@@ -10244,7 +10244,7 @@ vue-clickaway@^2.2.2:
   dependencies:
     loose-envify "^1.2.0"
 
-vue-clipboard2@^0.3.0:
+vue-clipboard2@^0.3.1:
   version "0.3.1"
   resolved "https://registry.npm.taobao.org/vue-clipboard2/download/vue-clipboard2-0.3.1.tgz#6e551fb7bd384889b28b0da3b12289ed6bca4894"
   integrity sha1-blUft704SImyiw2jsSKJ7WvKSJQ=

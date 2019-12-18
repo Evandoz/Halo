@@ -88,41 +88,41 @@ export default {
       unreadNotifications: [
         {
           index: 0,
-          title: "New Message",
+          title: "新主机已成功初始化",
           msg: "Are your going to meet me tonight?",
-          icon: "MessageSquareIcon",
+          icon: "ServerIcon",
           time: this.randomDate({ sec: 10 }),
-          category: "primary"
+          category: "success"
         },
         {
           index: 1,
-          title: "New Order Recieved",
+          title: "负载任务 task-6ebc0a 已部署",
           msg: "You got new order of goods.",
-          icon: "PackageIcon",
+          icon: "MenuIcon",
           time: this.randomDate({ sec: 40 }),
           category: "success"
         },
         {
           index: 2,
-          title: "Server Limit Reached!",
+          title: "主机 USA-LA-2 已失去心跳",
           msg: "Server have 99% CPU usage.",
-          icon: "AlertOctagonIcon",
+          icon: "ServerIcon",
           time: this.randomDate({ min: 1 }),
           category: "danger"
         },
         {
           index: 3,
-          title: "New Mail From Peter",
+          title: "负载任务 task-5efa9e 已完成",
           msg: "Cake sesame snaps cupcake",
-          icon: "MailIcon",
+          icon: "MenuIcon",
           time: this.randomDate({ min: 6 }),
           category: "primary"
         },
         {
           index: 4,
-          title: "Bruce's Party",
+          title: "负载任务 task-0ad0d17 已停止",
           msg: "Chocolate cake oat cake tiramisu",
-          icon: "CalendarIcon",
+          icon: "MenuIcon",
           time: this.randomDate({ hr: 2 }),
           category: "warning"
         }
